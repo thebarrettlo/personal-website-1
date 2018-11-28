@@ -1,0 +1,306 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/**********************
+Smartphone size
+**********************/    
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: black;
+    margin: 0;
+}
+
+header {
+    display: inline-block;
+    height: 120px;
+    margin: 30px;
+}
+
+header img {
+    max-height: 100px;
+}
+
+#homeIcon {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+}
+
+h1 {
+    color: white;
+    font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-weight: 600;
+    font-size: 3.5em;
+}
+
+#parent {
+    margin: auto;
+}
+
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 70px;
+    transition: 0.5s;
+    text-align: left;
+    font-family: "Courier New", Courier, sans-serif;
+    font-size: 1.2em;
+    white-space: nowrap;
+}
+
+.nav a {
+    padding: 8px 32px 8px 30px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    
+}
+
+.nav a:hover {
+    color: #73E4CD;
+}
+
+.nav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 2em;
+    margin-right: 0;
+}
+
+#menubtn {
+    font-family: "Courier New", Courier, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+
+.gallery {
+    display: block;
+}
+
+.gallery:nth-child(odd) {
+    position: relative;
+    left: 15px;
+}
+
+.gallery:nth-child(even) {
+    position: relative;
+    right: 15px;
+}
+
+.gallery img {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+#aboutme {
+    /*font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
+    font-family: "Courier New", Courier, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+.link {
+    text-decoration: underline solid white;
+}
+
+.nav .social {
+    position: absolute;
+    text-align: center;
+    margin: 10px;
+}
+
+.icon {
+    margin: 5px auto;
+    height: 20px;
+    width: 20px;
+    border: 0;
+}
+
+footer {
+    text-align: center;
+    font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: .75em;
+    color: #777777;
+}
+
+/**********************
+Tablet size
+**********************/
+@media only screen and (min-width: 768px) {
+    
+    body {
+        display: block;
+    }
+    
+    header {
+        margin: 150px 75px 50px;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 5em;
+    }
+    
+    #parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav {
+        display: inline-block;
+        margin: 50px 100px;
+        text-align: center;
+        font-family: "Courier New", Courier, sans-serif;
+        font-size: 2em;
+    }
+    
+    #aboutme {
+        /*font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
+        font-family: "Courier New", Courier, sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 50px;
+    }
+
+    .icon {
+        margin: 20px 20px;
+        height: 29px;
+        width: 29px;
+        border: 0;
+    }
+    
+    footer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        text-align: center;
+        font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+        font-size: .75em;
+        color: #777777;
+    }
+    
+}
+
+/**********************
+Desktop size
+**********************/
+@media only screen and (min-width: 1024px) {
+    body {
+        display: block;
+    }
+
+    header {
+        margin: 150px auto 0;
+        grid-area: header;
+    }
+
+    h1 {
+        color: white;
+        font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+        font-weight: 600;
+        font-size: 5.375em;
+    }
+
+    #parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav {
+        display: inline-block;
+        position: relative;
+        margin: 50px 100px;
+        text-align: center;
+        font-family: "Courier New", Courier, sans-serif;
+        font-size: 2em;
+    }
+    
+    #aboutme {
+        /*font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
+        font-family: "Courier New", Courier, sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 50px;
+    }
+
+    .icon {
+        margin: 20px 20px;
+        height: 29px;
+        width: 29px;
+        border: 0;
+    }
+    
+    footer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        text-align: center;
+        font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+        font-size: .75em;
+        color: #777777;
+    }
+}
+
+/**********************
+Anchor link styles
+**********************/
+
+a:link {
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.link:hover {
+	color: #73E4CD;
+	background-color: transparent;
+	text-decoration: underline solid #73E4CD;
+}
+
+
+/**********************
+Imported fonts
+**********************/
+
+@font-face {
+	font-family: helveticaNeueNormal;
+	src: url(fonts/HelveticaNeue.ttf);
+}
+
+@font-face {
+	font-family: helveticaNeueLt;
+	src: url(fonts/HelveticaNeueLt.ttf);
+}
+
+@font-face {
+	font-family: helveticaNeueMedium;
+	src: url(fonts/HelveticaNeueMed.ttf)
+}
+
+@font-face {
+	font-family: helveticaNeueBold;
+	src: url(fonts/HelveticaNeueBd.ttf)
+}
