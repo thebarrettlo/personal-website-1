@@ -50,7 +50,7 @@ h1 {
     top: 20px;
     left: 45%;
     transform: translateX(-45%);
-    margin: 15px auto auto auto;
+    margin: auto;
 }
 
 #parent {
@@ -129,17 +129,23 @@ a:visited {
 }
 
 .nav .closebtn {
-    position: relative;
+    position: fixed;
     text-align: center;
-    top: 92%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 2em;
     margin-right: 0;
 }
 
+.nav .navcontents {
+    height: 275px;
+    overflow: scroll;
+    position: relative;
+    top: 50px;
+}
 .nav .social {
-    position: absolute;
-    text-align: center;
-    margin: 30px 10px;
+    margin: 12px auto 12px 10px;
 }
 
 .social a {
