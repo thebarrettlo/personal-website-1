@@ -1,7 +1,7 @@
 function openNav() {
-    document.getElementById("sidebar").style.width = "300px";
+    document.getElementById("sidebar").style.top = "50%";
 }
 
 function closeNav() {
-    document.getElementById("sidebar").style.width = "0";
+    document.getElementById("sidebar").style.top = "200%";
 }
