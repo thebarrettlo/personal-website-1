@@ -14,9 +14,12 @@ body {
 }
 
 header {
-    display: inline-block;
+    display: inline;
     height: 120px;
-    margin: 30px;
+    width: 100%;
+    margin: 30px 0;
+    position: fixed;
+    padding-left: 20px;
 }
 
 header img {
@@ -25,8 +28,6 @@ header img {
 
 #homeIcon {
     position: absolute;
-    left: 25px;
-    top: 25px;
 }
 
 h1 {
@@ -36,9 +37,36 @@ h1 {
     font-size: 3.5em;
 }
 
+#name {
+    position: absolute;
+    color: white;
+    font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-weight: 600;
+    font-size: 2em;
+    width: 200px;
+    margin: auto;
+    left: 80px;
+}
+
 #parent {
     margin: auto;
 }
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+a:hover {
+    color: #73E4CD;
+    transition: 0.3s;
+}
+
+a:visited {
+    text-decoration: underline;
+    color: white;
+}
+
 
 .nav {
     height: 100%;
@@ -55,27 +83,49 @@ h1 {
     font-family: "Courier New", Courier, sans-serif;
     font-size: 1.2em;
     white-space: nowrap;
+    opacity: 0.99;
 }
 
 .nav a {
-    padding: 8px 32px 8px 30px;
+    padding: 12px 32px 12px 30px;
     text-decoration: none;
     color: white;
     display: block;
-    transition: 0.3s;
-    
+    opacity: 1;
 }
 
 .nav a:hover {
     color: #73E4CD;
+    transition: 0.3s;
 }
 
 .nav .closebtn {
     position: absolute;
     top: 10px;
-    right: 30px;
+    right: 10px;
     font-size: 2em;
     margin-right: 0;
+}
+
+.nav .social {
+    position: absolute;
+    text-align: center;
+    margin: 30px 10px;
+}
+
+.social a {
+    display: inline;
+    padding: 20px;
+}
+
+#current {
+    color: #73E4CD;
+    font-weight: bold;
+}
+
+hr {
+    opacity: 0.2;
+    width: 90%;
 }
 
 #menubtn {
@@ -83,51 +133,42 @@ h1 {
     font-size: 1.5em;
     color: white;
     cursor: pointer;
-    position: absolute;
-    top: 30px;
+    position: relative;
+    float: right;
     right: 40px;
+    background-color: black;
+    text-decoration: underline;
+}
+
+#menubtn:hover {
+    color: #73E4CD;
+    transition: 0.3s;
 }
 
 .gallery {
-    display: block;
-}
-
-.gallery:nth-child(odd) {
-    position: relative;
-    left: 15px;
-}
-
-.gallery:nth-child(even) {
-    position: relative;
-    right: 15px;
+    margin: 150px 20px 2em 20px;
+    line-height: 1.5;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0.4em;
+    -moz-column-count: 2;
+    -moz-column-gap: 0.4em;
+    column-count: 2;
+    column-gap: .4em;
 }
 
 .gallery img {
-    max-height: 300px;
-    max-width: 300px;
-}
-
-#aboutme {
-    /*font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
-    font-family: "Courier New", Courier, sans-serif;
-    font-size: 1.5em;
-    margin-bottom: 50px;
+    width: 100% !important;
+    height: auto !important;
 }
 
 .link {
     text-decoration: underline solid white;
 }
 
-.nav .social {
-    position: absolute;
-    text-align: center;
-    margin: 10px;
-}
-
 .icon {
     margin: 5px auto;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     border: 0;
 }
 
@@ -144,119 +185,341 @@ Tablet size
 @media only screen and (min-width: 768px) {
     
     body {
-        display: block;
-    }
-    
-    header {
-        margin: 150px 75px 50px;
-        text-align: center;
-    }
-    
-    h1 {
-        font-size: 5em;
-    }
-    
-    #parent {
         display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .nav {
-        display: inline-block;
-        margin: 50px 100px;
-        text-align: center;
-        font-family: "Courier New", Courier, sans-serif;
-        font-size: 2em;
-    }
-    
-    #aboutme {
-        /*font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
-        font-family: "Courier New", Courier, sans-serif;
-        font-size: 1.5em;
-        margin-bottom: 50px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        background-color: black;
+        margin: 0;
     }
 
-    .icon {
-        margin: 20px 20px;
-        height: 29px;
-        width: 29px;
-        border: 0;
-    }
     
-    footer {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 20px;
-        text-align: center;
-        font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-        font-size: .75em;
-        color: #777777;
-    }
-    
-}
-
-/**********************
-Desktop size
-**********************/
-@media only screen and (min-width: 1024px) {
-    body {
-        display: block;
-    }
-
     header {
-        margin: 150px auto 0;
-        grid-area: header;
+        display: inline-block;
+        height: 120px;
+        width: 100%;
+        margin: 30px 0;
+        position: fixed;
+    }
+
+    header img {
+        max-height: 100px;
+    }
+
+    #homeIcon {
+        position: relative;
+        left: 50%;
     }
 
     h1 {
         color: white;
         font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
         font-weight: 600;
-        font-size: 5.375em;
+        font-size: 3.5em;
+    }
+    
+    #name {
+        color: white;
+        font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+        font-weight: 600;
+        font-size: 2em;
+        width: 300px;
+        margin: 30px auto auto 20px;
     }
 
     #parent {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin: auto;
+    }
+    
+    a {
+        text-decoration: underline;
+        color: white;
+    }
+
+    a:visited {
+        text-decoration: underline;
+        color: white;
     }
     
     .nav {
-        display: inline-block;
-        position: relative;
-        margin: 50px 100px;
-        text-align: center;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 70px;
+        transition: 0.5s;
+        text-align: left;
         font-family: "Courier New", Courier, sans-serif;
-        font-size: 2em;
+        font-size: 1.2em;
+        white-space: nowrap;
+        opacity: 0.99;
     }
-    
-    #aboutme {
-        /*font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
+
+    .nav a {
+        padding: 12px 32px 12px 30px;
+        text-decoration: none;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        opacity: 1;
+    }
+
+    .nav a:hover {
+        color: #73E4CD;
+    }
+
+    .nav .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 2em;
+        margin-right: 0;
+    }
+
+    .nav .social {
+        position: absolute;
+        text-align: center;
+        margin: 30px 10px;
+    }
+
+    .social a {
+        display: inline;
+        padding: 20px;
+    }
+
+    #current {
+        color: #73E4CD;
+        font-weight: bold;
+    }
+
+    #menubtn {
         font-family: "Courier New", Courier, sans-serif;
         font-size: 1.5em;
-        margin-bottom: 50px;
+        color: white;
+        cursor: pointer;
+        position: relative;
+        float: right;
+        right: 20px;
+        background-color: black;
+        text-decoration: underline;
+    }
+
+    #menubtn:hover {
+        color: #73E4CD;
+        transition: 0.5s;
+    }
+
+    .gallery {
+        margin: 3em 20px 2em 20px;
+        line-height: 1.5;
+        -webkit-column-count: 3;
+        -webkit-column-gap: 0.4em;
+        -moz-column-count: 3;
+        -moz-column-gap: 0.4em;
+        column-count: 3;
+        column-gap: .4em;
+    }
+
+    .gallery img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .link {
+        text-decoration: underline solid white;
     }
 
     .icon {
-        margin: 20px 20px;
-        height: 29px;
-        width: 29px;
+        margin: 5px auto;
+        height: 25px;
+        width: 25px;
         border: 0;
     }
-    
+
     footer {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 20px;
         text-align: center;
         font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";
         font-size: .75em;
         color: #777777;
     }
-}
+
+/**********************
+Desktop size
+**********************/
+@media only screen and (min-width: 1024px) {
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        background-color: black;
+        margin: 0;
+    }
+
+    
+    header {
+        display: block;
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        background-color: grey;
+    }
+
+    header img {
+        max-height: 100px;
+    }
+
+    #homeIcon {
+        position: relative;
+        left: 50%;
+    }
+
+    h1 {
+        color: white;
+        font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+        font-weight: 600;
+        font-size: 3.5em;
+    }
+    
+    #name {
+        color: white;
+        font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+        font-weight: 600;
+        font-size: 2em;
+        width: 300px;
+        margin: 0;
+    }
+
+    #parent {
+        margin: auto;
+    }
+    
+    a {
+        text-decoration: underline;
+        color: white;
+    }
+
+    a:visited {
+        text-decoration: underline;
+        color: white;
+    }
+    
+    .nav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 70px;
+        transition: 0.5s;
+        text-align: left;
+        font-family: "Courier New", Courier, sans-serif;
+        font-size: 1.2em;
+        white-space: nowrap;
+        opacity: 0.99;
+    }
+
+    .nav a {
+        padding: 12px 32px 12px 30px;
+        text-decoration: none;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        opacity: 1;
+    }
+
+    .nav a:hover {
+        color: #73E4CD;
+    }
+
+    .nav .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 2em;
+        margin-right: 0;
+    }
+
+    .nav .social {
+        position: absolute;
+        text-align: center;
+        margin: 30px 10px;
+    }
+
+    .social a {
+        display: inline;
+        padding: 20px;
+    }
+
+    #current {
+        color: #73E4CD;
+        font-weight: bold;
+    }
+
+    #menubtn {
+        font-family: "Courier New", Courier, sans-serif;
+        font-size: 1.5em;
+        color: white;
+        cursor: pointer;
+        position: relative;
+        float: right;
+        right: 20px;
+        background-color: black;
+        text-decoration: underline;
+    }
+
+    #menubtn:hover {
+        color: #73E4CD;
+        transition: 0.5s;
+    }
+
+    .gallery {
+        position: relative;
+        left: 250px;
+        margin: 20px;
+        line-height: 1.5;
+        -webkit-column-count: 3;
+        -webkit-column-gap: 0.4em;
+        -moz-column-count: 3;
+        -moz-column-gap: 0.4em;
+        column-count: 3;
+        column-gap: .4em;
+    }
+
+    .gallery img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .link {
+        text-decoration: underline solid white;
+    }
+
+    .icon {
+        margin: 5px auto;
+        height: 25px;
+        width: 25px;
+        border: 0;
+    }
+
+    footer {
+        text-align: center;
+        font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+        font-size: .75em;
+        color: #777777;
+    }
 
 /**********************
 Anchor link styles
