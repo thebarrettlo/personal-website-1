@@ -1,20 +1,24 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*~~~~~ Notes ~~~~~
+- Colors used:
+    Black = rgb(18, 18, 18)
+    White = rgb(256, 256, 256) or #FFFFFF
+    Teal = #c34a18
+    Burgundy = #c34a18
+
+
 /**********************
 Smartphone size
 **********************/    
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    background-color: black;
+    display: block;
+    background-color: rgb(18, 18, 18);
     margin: 0;
 }
 
 header {    
-    display: flex;
     height: 100px;
     width: 100%;
     box-sizing: border-box;
@@ -32,15 +36,16 @@ header img {
     margin: auto;
 }
 
-h1 {
-    color: white;
+#photographytitle {
+    display: inline;
     font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-weight: 600;
-    font-size: 3.5em;
+    font-size: 1.7em;
+    color: white;
+    margin-left: 10px; 
 }
 
 #name {
-    color: white;
+    color: rgb(18, 18, 18);
     font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-weight: 600;
     font-size: 2.1em;
@@ -57,16 +62,6 @@ h1 {
     margin: auto;
 }
 
-a {
-    text-decoration: underline;
-    color: white;
-}
-
-a:visited {
-    text-decoration: underline;
-    color: white;
-}
-
 #menubtn {
     font-family: "Courier New", Courier, sans-serif;
     font-size: 1.5em;
@@ -81,9 +76,9 @@ a:visited {
 
 #menubtn:hover {
     text-decoration: underline;
-    text-decoration-color: #73E4CD;
-    -moz-text-decoration-color: #73E4CD;
-    -webkit-text-decoration-color: #73E4CD;
+    text-decoration-color: #c34a18;
+    -moz-text-decoration-color: #c34a18;
+    -webkit-text-decoration-color: #c34a18;
 }
 
 .nav {
@@ -91,7 +86,7 @@ a:visited {
     width: 95%;
     position: fixed;
     z-index: 1;
-    background-color: #111;
+    background-color: white;
     overflow-x: hidden;
     transition: 0.6s;
     transition-timing-function: cubic-bezier(0, 0, 0.17, 1);
@@ -110,20 +105,20 @@ a:visited {
 .nav a {
     padding: 12px 32px 12px 30px;
     text-decoration: none;
-    color: white;
     display: block;
     opacity: 1;
 }
 
 .nav a:hover {
+    color: rgb(18, 18, 18);
     text-decoration: underline;
-    text-decoration-color: #73E4CD;
-    -moz-text-decoration-color: #73E4CD;
-    -webkit-text-decoration-color: #73E4CD;
+    text-decoration-color: #c34a18;
+    -moz-text-decoration-color: #c34a18;
+    -webkit-text-decoration-color: #c34a18;
     transition: none;
 }
 
-.nav .closebtn {
+#closebtn {
     position: fixed;
     text-align: center;
     bottom: 16px;
@@ -155,7 +150,7 @@ a:visited {
 }
 
 #current {
-    color: #73E4CD;
+    color: #c34a18;
     font-weight: bold;
 }
 
@@ -165,8 +160,6 @@ hr {
 }
 
 .gallery {
-    display: flex;
-    flex-direction: column;
     margin: 20px;
 }
 
@@ -174,10 +167,6 @@ hr {
     width: 100% !important;
     height: auto !important;
     margin: 10px auto;
-}
-
-.link {
-    text-decoration: underline solid white;
 }
 
 .icon {
@@ -202,191 +191,48 @@ hr {
 /**********************
 Tablet size
 **********************/
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     
+    #menubtn {
+        bottom: 100%;
+    }
+
+    #closebtn {
+        left: -100%;
+    }
+
     .nav {
-        height: 50%;
-        width: 85%;
-        transform: translate(-50%,-15%);
+        background-color: white;
+        height: 91%;
+        width: 33%;
+        transform: none;
+        left: 0;
+        top: 0;
+        margin: 20px;
     }
 
     .navcontents {
         box-sizing: border-box;
     }
 
+    .footer {
+        font-size: .7em;
+        bottom: 30px;
+    }
+
+    .bodycontent {
+        width: 59%;
+        float: right;
+        margin: 20px;
+        box-sizing: border-box;
+    }
+
+}
 /**********************
 Desktop size
 **********************/
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: stretch;
-        background-color: black;
-        margin: 0;
-    }
-
-    
-    header {
-        display: block;
-        height: 100%;
-        width: 250px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        overflow-x: hidden;
-        background-color: grey;
-    }
-
-    header img {
-        max-height: 100px;
-    }
-
-    #homeIcon {
-        position: relative;
-        left: 50%;
-    }
-
-    h1 {
-        color: white;
-        font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-        font-weight: 600;
-        font-size: 3.5em;
-    }
-    
-    #name {
-        color: white;
-        font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-        font-weight: 600;
-        font-size: 2em;
-        width: 300px;
-        margin: 0;
-    }
-
-    #parent {
-        margin: auto;
-    }
-    
-    a {
-        text-decoration: underline;
-        color: white;
-    }
-
-    a:visited {
-        text-decoration: underline;
-        color: white;
-    }
-    
-    .nav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        right: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        padding-top: 70px;
-        transition: 0.5s;
-        text-align: left;
-        font-family: "Courier New", Courier, sans-serif;
-        font-size: 1.2em;
-        white-space: nowrap;
-        opacity: 0.99;
-    }
-
-    .nav a {
-        padding: 12px 32px 12px 30px;
-        text-decoration: none;
-        color: white;
-        display: block;
-        transition: 0.3s;
-        opacity: 1;
-    }
-
-    .nav a:hover {
-        color: #73E4CD;
-    }
-
-    .nav .closebtn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        font-size: 2em;
-        margin-right: 0;
-    }
-
-    .nav .social {
-        position: absolute;
-        text-align: center;
-        margin: 30px 10px;
-    }
-
-    .social a {
-        display: inline;
-        padding: 20px;
-    }
-
-    #current {
-        color: #73E4CD;
-        font-weight: bold;
-    }
-
-    #menubtn {
-        font-family: "Courier New", Courier, sans-serif;
-        font-size: 1.5em;
-        color: white;
-        cursor: pointer;
-        position: relative;
-        float: right;
-        right: 20px;
-        background-color: black;
-        text-decoration: underline;
-    }
-
-    #menubtn:hover {
-        color: #73E4CD;
-        transition: 0.5s;
-    }
-
-    .gallery {
-        position: relative;
-        left: 250px;
-        margin: 20px;
-        line-height: 1.5;
-        -webkit-column-count: 3;
-        -webkit-column-gap: 0.4em;
-        -moz-column-count: 3;
-        -moz-column-gap: 0.4em;
-        column-count: 3;
-        column-gap: .4em;
-    }
-
-    .gallery img {
-        width: 100% !important;
-        height: auto !important;
-    }
-    
-    .link {
-        text-decoration: underline solid white;
-    }
-
-    .icon {
-        margin: 5px auto;
-        height: 25px;
-        width: 25px;
-        border: 0;
-    }
-
-    footer {
-        text-align: center;
-        font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-        font-size: .75em;
-        color: #777777;
-    }
 }
 
 /**********************
@@ -394,21 +240,21 @@ Anchor link styles
 **********************/
 
 a:link {
-	color: white;
+	color: rgb(18, 18, 18);
 	background-color: transparent;
 	text-decoration: none;
 }
 
 a:visited {
-	color: white;
+	color: rgb(18, 18, 18);
 	background-color: transparent;
 	text-decoration: none;
 }
 
-.link:hover {
-	color: #73E4CD;
+a:hover {
+	color: #c34a18;
 	background-color: transparent;
-	text-decoration: underline solid #73E4CD;
+	text-decoration: underline solid #c34a18;
 }
 
 

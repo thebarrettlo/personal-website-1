@@ -7,61 +7,64 @@
 </head>
 
 <body>
-    <header>      
-        <a href="photography.html" title="Home" id="homeIcon"><img src="images/bearDrawing.png"></a>
+    <div id="sidebar" class="nav">
+        <h2 id="name">the barrett lo</h2>
+        <hr style="position: relative; top: 50px">
+        <div class="navcontents">
+            <ul>
+                <li><a href="photography.html" id="current">Photography home</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="street.html">Street</a></li>
+                <li><a href="portraits.html">Portraits</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+                <hr>
 
-        <span id="menubtn" onclick="openNav()">&mdash; Menu &mdash;</span>
+                <li><a href="aboutme.html" title="Read about me">About me</a></li>
+                <li><a href="design.html" title="Design portfolio">Design work</a></li>
 
-        <script src="sidebar.js"></script>
-    
-        <div id="sidebar" class="nav">
-            <h2 id="name">the barrett lo</h2>
-            <hr style="position: relative; top: 50px">
-            <div class="navcontents">
-                <ul>
-                    <li><a href="photography.html" id="current">Photography home</a></li>
-                    <li><a href="travel.html">Travel</a></li>
-                    <li><a href="street.html">Street</a></li>
-                    <li><a href="portraits.html">Portraits</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    
-                    <hr>
+            </ul>
 
-                    <li><a href="aboutme.html" title="Read about me">About me</a></li>
-                    <li><a href="design.html" title="Design portfolio">Design work</a></li>
-
-                </ul>
-
-                <div class="social">
-                    <a href="https://www.facebook.com/theBarrettLo/" title="Like my Facebook Page!" target="_blank">
-                        <img src="images/FB-f-Logo__white_50.png" alt="Like my Facebook Page www.facebook.com/thebarrettlo" class="icon"></a>
-                    <a href="https://www.instagram.com/phfamu/" title="Follow me on Instagram!" target="_blank">
-                        <img src="images/glyph-logo_May2016_white-50.png" alt="Follow me on Instagram @phfamu" class="icon"></a>
-                    <a href="https://www.linkedin.com/in/thebarrettlo/" title="Connect with me on LinkedIn!" target="_blank">   
-                        <img src="images/white-IN.png" alt="Connect with me on LinkedIn www.linkedin.com/in/thebarrettlo" class="icon"></a>
-                </div>
+            <div class="social">
+                <a href="https://www.facebook.com/theBarrettLo/" title="Like my Facebook Page!" target="_blank">
+                    <img src="images/FB-f-Logo__white_50.png" alt="Like my Facebook Page www.facebook.com/thebarrettlo" class="icon"></a>
+                <a href="https://www.instagram.com/phfamu/" title="Follow me on Instagram!" target="_blank">
+                    <img src="images/glyph-logo_May2016_white-50.png" alt="Follow me on Instagram @phfamu" class="icon"></a>
+                <a href="https://www.linkedin.com/in/thebarrettlo/" title="Connect with me on LinkedIn!" target="_blank">   
+                    <img src="images/white-IN.png" alt="Connect with me on LinkedIn www.linkedin.com/in/thebarrettlo" class="icon"></a>
             </div>
-            <div class="footer">
-                    <p>E-mail me at <a href="mailto:thebarrettlo@gmail.com">thebarrettlo@gmail.com</a></p>
-                    <p>&copy; 2018 Barrett Lo</p>
-            </div>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&mdash; &times; &mdash;</a>
         </div>
-    </header>
+        <div class="footer">
+                <p>E-mail me at <a href="mailto:thebarrettlo@gmail.com">thebarrettlo@gmail.com</a></p>
+                <p>&copy; 2018 Barrett Lo</p>
+        </div>
+        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&mdash; &times; &mdash;</a>
+    </div>
+
+    <div class="bodycontent">
+        <header>      
+            <a href="photography.html" title="Home" id="homeIcon"><img src="images/bearDrawing.png"><h1 id="photographytitle">photography</h1></a>
+
+            <span id="menubtn" onclick="openNav()">&mdash; Menu &mdash;</span>
+
+            <script src="sidebar.js"></script>
+        </header>
+        
+        <hr>
+
+        <section class="gallery">
+            <img src="images/_BPL7308.jpg">
+            <img src="images/_BPL7447.jpg">
+            <img src="images/_BPL7610.jpg">
+            <img src="images/_BPL7873.jpg">
+            <img src="images/_DSC9007.jpg">
+            <img src="images/_DSC9052.jpg">
+            <img src="images/_DSC9710.jpg">
+        </section>
+
+        <hr>
+        <br>
+    </div>
     
-    <hr>
-
-    <section class="gallery">
-        <img src="images/_BPL7308.jpg">
-        <img src="images/_BPL7447.jpg">
-        <img src="images/_BPL7610.jpg">
-        <img src="images/_BPL7873.jpg">
-        <img src="images/_DSC9007.jpg">
-        <img src="images/_DSC9052.jpg">
-        <img src="images/_DSC9710.jpg">
-    </section>
-
-    <hr>
-
 </body>
 </html>
