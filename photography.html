@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <header>        
+    <header>      
         <a href="photography.html" title="Home" id="homeIcon"><img src="images/bearDrawing.png"></a>
 
         <span id="menubtn" onclick="openNav()">&mdash; Menu &mdash;</span>
@@ -15,19 +15,22 @@
         <script src="sidebar.js"></script>
     
         <div id="sidebar" class="nav">
-            <h2 id="name">Barrett Lo</h2>
+            <h2 id="name">the barrett lo</h2>
             <hr style="position: relative; top: 50px">
             <div class="navcontents">
-                <a href="photography.html" id="current"><span>Photography home</span></a>
-                <a href="travel.html"><span>Travel</span></a>
-                <a href="street.html"><span>Street</span></a>
-                <a href="portraits.html"><span>Portraits</span></a>
-                <a href="contact.html"><span>Contact</span></a>
+                <ul>
+                    <li><a href="photography.html" id="current">Photography home</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="street.html">Street</a></li>
+                    <li><a href="portraits.html">Portraits</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                    <hr>
 
-                <hr>
+                    <li><a href="aboutme.html" title="Read about me">About me</a></li>
+                    <li><a href="design.html" title="Design portfolio">Design work</a></li>
 
-                <a href="aboutme.html" title="Read about me"><span>About me</span></a>
-                <a href="design.html" title="Design portfolio"><span>Design work</span></a>
+                </ul>
 
                 <div class="social">
                     <a href="https://www.facebook.com/theBarrettLo/" title="Like my Facebook Page!" target="_blank">
@@ -42,7 +45,7 @@
                     <p>E-mail me at <a href="mailto:thebarrettlo@gmail.com">thebarrettlo@gmail.com</a></p>
                     <p>&copy; 2018 Barrett Lo</p>
             </div>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&mdash; &times; &mdash;</a>
         </div>
     </header>
     
