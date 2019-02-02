@@ -53,6 +53,7 @@ header img {
     font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-weight: 600;
     font-size: 2.1em;
+    word-spacing: -1px;
     width: auto;
     text-align: center;
     position: absolute;
@@ -187,8 +188,8 @@ hr {
     font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-size: .55em;
     color: #757575;
+    line-height: 9pt;
     bottom: 75px;
-    line-height: 2px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -221,8 +222,8 @@ Tablet size
     }
 
     .footer {
-        font-size: .7em;
-        bottom: 20px;
+        font-size: 6pt;
+        bottom: 15px;
     }
 
     .bodycontent {
