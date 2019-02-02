@@ -5,6 +5,7 @@
 - Colors used:
     Black = rgb(18, 18, 18)
     White = rgb(256, 256, 256) or #FFFFFF
+    Grey = #757575
     Teal = #c34a18
     Burgundy = #c34a18
 
@@ -22,9 +23,9 @@ header {
     height: 100px;
     width: 100%;
     box-sizing: border-box;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
     position: static;
-    padding: 20px;
+    padding: 30px 10px 20px 30px;
 }
 
 header img {
@@ -32,16 +33,19 @@ header img {
 }
 
 #homeIcon {
-    position: static;
+    position: fixed;
     margin: auto;
+    z-index: 1;
 }
 
 #photographytitle {
-    display: inline;
+    display: block;
+    position: fixed;
+    z-index: 1;
     font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-size: 1.7em;
     color: white;
-    margin-left: 10px; 
+    margin: auto auto auto 50px; 
 }
 
 #name {
@@ -85,7 +89,7 @@ header img {
     height: 90%;
     width: 95%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     background-color: white;
     overflow-x: hidden;
     transition: 0.6s;
@@ -138,10 +142,11 @@ header img {
 .nav ul {
     list-style: none;
     padding-inline-start: 0;
+    margin: 0;
 }
 
 .nav .social {
-    margin: 12px auto 12px 10px;
+    margin: 12px 10px;
 }
 
 .social a {
@@ -166,7 +171,7 @@ hr {
 .gallery img {
     width: 100% !important;
     height: auto !important;
-    margin: 10px auto;
+    margin: auto auto 15px auto;
 }
 
 .icon {
@@ -181,7 +186,7 @@ hr {
     text-align: center;
     font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-size: .55em;
-    color: #777777;
+    color: #757575;
     bottom: 75px;
     line-height: 2px;
     left: 50%;
@@ -194,21 +199,21 @@ Tablet size
 @media screen and (min-width: 768px) {
     
     #menubtn {
-        bottom: 100%;
+        display: none;
     }
 
     #closebtn {
-        left: -100%;
+        display: none;  
     }
 
     .nav {
-        background-color: white;
         height: 91%;
-        width: 33%;
+        width: 256px;
         transform: none;
         left: 0;
         top: 0;
         margin: 20px;
+        padding-bottom: 25px;
     }
 
     .navcontents {
@@ -217,14 +222,30 @@ Tablet size
 
     .footer {
         font-size: .7em;
-        bottom: 30px;
+        bottom: 20px;
     }
 
     .bodycontent {
-        width: 59%;
-        float: right;
-        margin: 20px;
-        box-sizing: border-box;
+        position: relative;
+        width: auto;
+        margin: 20px auto 20px 276px;
+    }
+
+    header {
+        padding-top: 18px;
+    }
+
+    #photographytitle {
+        font-size: 2.1em;
+    }
+
+    .gallery {
+        column-count: 2;
+        column-gap: 10px;
+    }
+
+    .gallery img {
+        margin-bottom: 5px;
     }
 
 }
@@ -232,7 +253,26 @@ Tablet size
 Desktop size
 **********************/
 @media screen and (min-width: 1024px) {
-    
+    .nav {
+        height: 87%;
+    }
+
+    .navcontents {
+        height: 75%;
+    }
+
+    .gallery {
+        column-count: 3;
+    }
+}
+
+/**********************
+1440p width size
+**********************/
+@media screen and (min-width: 1440px) {
+    .gallery {
+        column-count: 4;
+    }
 }
 
 /**********************
