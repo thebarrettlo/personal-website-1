@@ -3,7 +3,7 @@
 
 /*~~~~~ Notes ~~~~~
 - Colors used:
-    Black = rgb(18, 18, 18)
+    Black = rgb(12, 12, 12)
     White = rgb(256, 256, 256) or #FFFFFF
     Grey = #757575
     Teal = #c34a18
@@ -20,7 +20,7 @@ html, body {
 
 body {
     display: block;
-    background-color: rgb(18, 18, 18);
+    background-color: rgb(12, 12, 12);
     margin: 0;
 }
 
@@ -54,7 +54,7 @@ header img {
 }
 
 #name {
-    color: rgb(18, 18, 18);
+    color: rgb(12, 12, 12));
     font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-weight: 600;
     font-size: 2.1em;
@@ -118,7 +118,7 @@ header img {
 }
 
 .nav a:hover {
-    color: rgb(18, 18, 18);
+    color: rgb(12, 12, 12);
     text-decoration: underline;
     text-decoration-color: #c34a18;
     -moz-text-decoration-color: #c34a18;
@@ -291,13 +291,13 @@ Anchor link styles
 **********************/
 
 a:link {
-	color: rgb(18, 18, 18);
+	color: rgb(12, 12, 12);
 	background-color: transparent;
 	text-decoration: none;
 }
 
 a:visited {
-	color: rgb(18, 18, 18);
+	color: rgb(12, 12, 12);
 	background-color: transparent;
 	text-decoration: none;
 }
