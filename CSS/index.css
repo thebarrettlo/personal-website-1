@@ -30,7 +30,7 @@ body {
 }
 
 header {
-    margin: 0 50px 50px 50px;
+    margin: 75px 50px;
     text-align: center;
 }
 
@@ -38,7 +38,7 @@ h1 {
     color: rgb(18, 18, 18);
     font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-weight: 600;
-    font-size: 3.5em;
+    font-size: 3em;
 }
 
 #parent {
@@ -46,19 +46,11 @@ h1 {
 }
 
 .nav {
-    margin: auto;
+    margin: 85px auto;
     text-align: center;
     font-family: "Courier New", Courier, sans-serif;
-    font-size: 2em;
-}
-
-.nav a:hover {
-    color: rgb(18, 18, 18);
-    text-decoration: underline;
-    text-decoration-color: #c34a18;
-    -moz-text-decoration-color: #c34a18;
-    -webkit-text-decoration-color: #c34a18;
-    transition: none;
+    font-size: 1.6em;
+    position: relative;
 }
 
 .nav ul {
@@ -72,11 +64,15 @@ h1 {
 }
 
 .social {
-    margin-top: 50px;
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    text-align: center;
 }
 
 .icon {
-    margin: auto 20px 20px;
+    margin: auto 20px;
     height: 29px;
     width: auto;
     border: 0;
@@ -89,128 +85,74 @@ footer {
     transform: translateX(-50%);
     text-align: center;
     font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-size: 6pt;
+    font-size: .6em;
     color: #757575;
 }
 
 /**********************
-Tablet size
+Tablet size (on desktop)
 **********************/
 @media only screen and (min-width: 768px) {
-    
-    body {
-        display: block;
-    }
-    
+
     header {
-        margin: 150px 75px 50px;
-        text-align: center;
+        margin: 88px auto 0;
     }
     
     h1 {
-        font-size: 5em;
+        font-size: 4em;
     }
-    
-    #parent {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
+
     .nav {
-        display: inline-block;
-        margin: 50px 100px;
-        text-align: center;
-        font-family: "Courier New", Courier, sans-serif;
-        font-size: 2em;
+        font-size: 1.8em;
+    }
+
+    .nav a:hover {
+        color: rgb(18, 18, 18);
+        text-decoration: underline;
+        text-decoration-color: #c34a18;
+        -moz-text-decoration-color: #c34a18;
+        -webkit-text-decoration-color: #c34a18;
+        transition: none;
     }
     
-    #aboutme {
-        /*font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
-        font-family: "Courier New", Courier, sans-serif;
-        font-size: 1.5em;
-        margin-bottom: 50px;
+    .social {
+        width: 500px;
     }
 
     .icon {
-        margin: 20px 20px;
-        height: 29px;
-        width: 29px;
-        border: 0;
+        margin: auto 40px;
     }
     
-    footer {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 20px;
-        text-align: center;
-        font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-        font-size: .75em;
-        color: #777777;
+}
+
+/**********************
+Tablet size (mobile)
+**********************/
+@media only screen and (min-width: 768px) and (min-height: 1024px) {
+
+    body {
+        height: 96%;
     }
-    
+
+    header {
+        margin: 150px auto 0;
+    }
+
+    .nav {
+        margin: 125px auto;
+    }
+
 }
 
 /**********************
 Desktop size
 **********************/
 @media only screen and (min-width: 1024px) {
-    body {
-        display: block;
-    }
-
-    header {
-        margin: 150px auto 0;
-        grid-area: header;
-    }
-
-    h1 {
-        color: white;
-        font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-        font-weight: 600;
-        font-size: 5.375em;
-    }
-
-    #parent {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     
     .nav {
-        display: inline-block;
-        position: relative;
-        margin: 50px 100px;
-        text-align: center;
-        font-family: "Courier New", Courier, sans-serif;
-        font-size: 2em;
+        margin: 85px auto;
     }
     
-    #aboutme {
-        /*font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";*/
-        font-family: "Courier New", Courier, sans-serif;
-        font-size: 1.5em;
-        margin-bottom: 50px;
-    }
-
-    .icon {
-        margin: 20px 20px;
-        height: 29px;
-        width: 29px;
-        border: 0;
-    }
-    
-    footer {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 20px;
-        text-align: center;
-        font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-        font-size: .75em;
-        color: #777777;
-    }
 }
 
 /**********************

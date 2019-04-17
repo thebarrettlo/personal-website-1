@@ -54,7 +54,7 @@ header img {
 }
 
 #name {
-    color: rgb(12, 12, 12));
+    color: rgb(12, 12, 12);
     font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-weight: 600;
     font-size: 2.1em;
@@ -75,20 +75,21 @@ header img {
 #menubtn {
     font-family: "Courier New", Courier, sans-serif;
     font-size: 1.5em;
-    color: white;
+    color: black;
+    background-color: white;
+    opacity: 0.97;
     cursor: pointer;
     position: fixed;
     left: 50%;
-    bottom: 7%;
+    bottom: 6%;
     transform: translateX(-50%);
     text-align: center;
+    box-sizing: border-box;
+    border: 2px solid transparent;
 }
 
 #menubtn:hover {
-    text-decoration: underline;
-    text-decoration-color: #c34a18;
-    -moz-text-decoration-color: #c34a18;
-    -webkit-text-decoration-color: #c34a18;
+    border: 2px solid #c34a18;
 }
 
 .nav {
