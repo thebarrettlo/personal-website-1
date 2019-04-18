@@ -7,7 +7,7 @@
 var gallery = document.getElementById("gallery");
 var imageList = ["_DSC4340.jpg", "_BPL7308.jpg", "_DSC4519.jpg", "_BPL7447.jpg", "_DSC4560.jpg",
     "_BPL7610.jpg", "_DSC4747.jpg", "_BPL7873.jpg", "_DSC9007.jpg", "_BPL8120.jpg", "_DSC9052.jpg",
-    "_BPL8296.jpg", "_DSC9710.jpg", "_BPL8306.jpg", "_DSC9992.jpg", "_DSC9992.jpg", "_BPL9129.jpg",
+    "_BPL8296.jpg", "_DSC9710.jpg", "_BPL8306.jpg", "_DSC9992.jpg", "_BPL9129.jpg",
     "_DSC0098.jpg", "_DSC4289.jpg"];
 var uniqueImages = [];
 var numOfImages = 18; // Choose how many photos to display
