@@ -111,14 +111,14 @@ header img {
     transform: translate(-50%, -50%);
 }
 
-.nav a {
+.nav ul a {
     padding: 12px 32px 12px 30px;
     text-decoration: none;
     display: block;
     opacity: 1;
 }
 
-.nav a:hover {
+.nav ul a:hover {
     color: rgb(12, 12, 12);
     text-decoration: underline;
     text-decoration-color: #c34a18;
@@ -169,11 +169,11 @@ hr {
     width: 90%;
 }
 
-.gallery {
+#gallery {
     margin: 20px;
 }
 
-.gallery img {
+#gallery img {
     width: 100% !important;
     height: auto !important;
     margin: auto auto 15px auto;
@@ -243,12 +243,12 @@ Tablet size
         font-size: 2.1em;
     }
 
-    .gallery {
+    #gallery {
         column-count: 2;
         column-gap: 10px;
     }
 
-    .gallery img {
+    #gallery img {
         margin-bottom: 5px;
     }
 
@@ -273,7 +273,7 @@ Desktop size
         padding: 10px;
     }
     
-    .gallery {
+    #gallery {
         column-count: 3;
     }
 }
@@ -282,7 +282,7 @@ Desktop size
 1440p width size
 **********************/
 @media screen and (min-width: 1440px) {
-    .gallery {
+    #gallery {
         column-count: 4;
     }
 }
@@ -304,11 +304,13 @@ a:visited {
 }
 
 a:hover {
-	color: #c34a18;
-	background-color: transparent;
-	text-decoration: underline solid #c34a18;
+	color: rgb(12, 12, 12);
+    text-decoration: underline;
+    text-decoration-color: #c34a18;
+    -moz-text-decoration-color: #c34a18;
+    -webkit-text-decoration-color: #c34a18;
+    transition: none;
 }
-
 
 /**********************
 Imported fonts
