@@ -5,20 +5,26 @@
 // reference an external text document holding image and link data for easier management.
 
 var gallery = document.getElementById("gallery");
-var imageList = ["_DSC4340.jpg", "_BPL7308.jpg", "_DSC4519.jpg", "_BPL7447.jpg", "_DSC4560.jpg",
-    "_BPL7610.jpg", "_DSC4747.jpg", "_BPL7873.jpg", "_DSC9007.jpg", "_BPL8120.jpg", "_DSC9052.jpg",
-    "_BPL8296.jpg", "_DSC9710.jpg", "_BPL8306.jpg", "_DSC9992.jpg", "_BPL9129.jpg",
-    "_DSC0098.jpg", "_DSC4289.jpg"];
-var uniqueImages = [];
+var imageList = [["yosemite18-1.jpg", "Mountainside in Yosemite National Park"], ["joshuaTree18-1.jpg", "People by a pond in Joshua Tree National Park"],
+    ["yosemite18-2.jpg", "River bank in Yosemite National Park"], ["joshuaTree18-2.jpg", "People climbing on a cliffside in Joshua Tree National Park"],
+    ["yosemite18-3.jpg", "Jet vapor trail in Yosemite National Park"], ["joshuaTree18-3.jpg", "Yellow VW Westfalia in Joshua Tree National Park"],
+    ["yosemite18-4.jpg", "Lone brown tree on cliffside in Yosemite National Park"], ["joshuaTree18-4.jpg", "Man photographing sunset in Joshua Tree National Park"],
+    ["amberJ18-1.jpg", "Woman laying on recliner"], ["missionTrails18-1.jpg", "Man rock climbing in Mission Trails Regional Park"],
+    ["amberJ18-2.jpg", "Woman looking over recliner back"], ["missionTrails18-2.jpg", "Rock climber on rock face in Mission Trails Regional Park"], 
+    ["amberJ18-3.jpg", "Woman with chocolate chip cookies on her eyes"], ["missionTrails18-3.jpg", "Rock climber at top of rock face in Mission Trails Regional Park"],
+    ["brandonJ18-1.jpg", "Man in colorful clothes outside"], ["borregoDesert18-1.jpg", "Rock climbers resting in Borrego Desert"], ["brandonJ18-2.jpg", "Topless man throwing balloons"],
+    ["yosemite18-5.jpg", "Lone boulder in clearing in Yosemite National Park"]];
+var uniqueImages = 0;
 var numOfImages = 18; // Choose how many photos to display
 
 // Randomly chooses which pictures in the array will be displayed
-while (uniqueImages.length < numOfImages) {
+while (uniqueImages < numOfImages) {
     var limit = imageList.length - 1;
     var randomNumber = Math.floor(Math.random() * limit);
     var curr = document.createElement("img");
-    curr.src = "images/" + imageList[randomNumber]
+    curr.src = "images/" + imageList[randomNumber][0];
+    curr.alt = imageList[randomNumber][1];
     gallery.appendChild(curr);
-    uniqueImages.push(imageList[randomNumber]);
+    uniqueImages += 1;
     imageList.splice(randomNumber,1);
 }
