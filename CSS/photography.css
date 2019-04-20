@@ -43,7 +43,7 @@ header img {
     z-index: 1;
 }
 
-#photographytitle {
+#titleheader {
     display: block;
     position: fixed;
     z-index: 1;
@@ -130,7 +130,7 @@ header img {
 #closebtn {
     position: fixed;
     text-align: center;
-    bottom: 16px;
+    bottom: 26px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 2em;
@@ -139,7 +139,7 @@ header img {
 
 .navcontents {
     height: 65%;
-    overflow: scroll;
+    overflow: auto;
     position: relative;
     top: 65px;
 }
