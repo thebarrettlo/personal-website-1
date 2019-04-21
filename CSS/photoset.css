@@ -116,6 +116,7 @@ header img {
     text-decoration: none;
     display: block;
     opacity: 1;
+    white-space: normal;
 }
 
 .nav ul a:hover {
@@ -162,6 +163,7 @@ header img {
 #current {
     color: #c34a18;
     font-weight: bold;
+    padding: 0px 32px 0 55px;
 }
 
 hr {
@@ -173,26 +175,28 @@ hr {
     margin: 20px;
 }
 
+.setHeader {
+    text-align: center;
+    color: white;
+    font-family: "Courier New", Courier, sans-serif;
+    margin-top: 50px;
+}
+
+.setTitle {
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.setSubtitle {
+    font-size: 1em;
+    font-weight: 300;
+}
+
 #gallery img {
     width: 100%;
     height: auto;
-    margin: auto;
-}
-
-.galleryThumb {
-    display: inline-block;
-    background-color: #f1f1f1;
-    margin: auto auto 15px auto;
-    padding: 8px;
-}
-
-.thumbCaption {
-    width: 80%;
-    margin: 10px auto;
-    color: rgb(12, 12, 12);
-    text-align: center;
-    font-family: "Courier New", Courier, sans-serif;
-    font-size: 1em;
+    margin: 15px auto;
 }
 
 .icon {
@@ -232,7 +236,7 @@ Tablet size
         width: 256px;
         transform: none;
         left: 0;
-        top: 0;
+        top: 0; 
         margin: 20px;
     }
 
@@ -263,13 +267,11 @@ Tablet size
         font-size: 2.1em;
     }
 
-    #gallery {
-        column-count: 2;
-        column-gap: 10px;
-    }
-
     #gallery img {
-        margin-bottom: 5px;
+        width: 85%;
+        position: relative;
+        transform: translateX(8%);
+        margin: 25px 0;
     }
 
 }
@@ -293,8 +295,9 @@ Desktop size
         padding: 10px;
     }
     
-    #gallery {
-        column-count: 3;
+    #gallery img {
+        width: 60%;
+        transform: translateX(32%);
     }
 }
 

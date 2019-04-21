@@ -3,5 +3,5 @@ function openNav() {
 }
 
 function closeNav() {
-    document.getElementById("sidebar").style.top = "200%";
+    document.getElementById("sidebar").style.top = "";
 }

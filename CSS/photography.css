@@ -174,8 +174,8 @@ hr {
 }
 
 #gallery img {
-    width: 100% !important;
-    height: auto !important;
+    width: 100%;
+    height: auto;
     margin: auto auto 15px auto;
 }
 
@@ -216,12 +216,16 @@ Tablet size
         width: 256px;
         transform: none;
         left: 0;
-        top: 0;
+        top: 0; 
         margin: 20px;
     }
 
     .navcontents {
         box-sizing: border-box;
+    }
+
+    .social a {
+        padding: 12px;
     }
 
     footer {
