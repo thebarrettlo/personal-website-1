@@ -48,15 +48,19 @@ header img {
     display: block;
     position: fixed;
     z-index: 1;
-    font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-size: 1.7em;
     color: white;
     margin: auto auto auto 50px; 
 }
 
+.emphasis {
+    font-weight: 300;
+}
+
 #name {
     color: rgb(12, 12, 12);
-    font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-weight: 600;
     font-size: 2.1em;
     word-spacing: -1px;
@@ -74,7 +78,7 @@ header img {
 }
 
 #menubtn {
-    font-family: "Courier New", Courier, sans-serif;
+    font-family: iAWriterDuospace-Regular, "Courier New", monospace;
     font-size: 1.5em;
     color: black;
     background-color: white;
@@ -103,7 +107,7 @@ header img {
     transition: 0.6s;
     transition-timing-function: cubic-bezier(0, 0, 0.17, 1);
     text-align: left;
-    font-family: "Courier New", Courier, sans-serif;
+    font-family: iAWriterDuospace-Regular, "Courier New", monospace;
     font-size: 1em;
     white-space: nowrap;
     opacity: 0.97;
@@ -117,6 +121,7 @@ header img {
     text-decoration: none;
     display: block;
     opacity: 1;
+    white-space: normal;
 }
 
 .nav ul a:hover {
@@ -170,8 +175,13 @@ hr {
     width: 90%;
 }
 
+.bodycontent {
+    margin-bottom: 85px;
+}
+
 #gallery {
     margin: 20px;
+    font-family: iAWriterDuospace-Regular, "Courier New", monospace;
 }
 
 #gallery img {
@@ -190,7 +200,7 @@ hr {
 footer {
     position: absolute;
     text-align: center;
-    font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-size: .55em;
     color: #757575;
     line-height: 9pt;
@@ -331,21 +341,21 @@ Imported fonts
 **********************/
 
 @font-face {
-	font-family: helveticaNeueNormal;
-	src: url(fonts/HelveticaNeue.ttf);
+	font-family: iAWriterDuospace-Bold;
+	src: url(../fonts/iAWriterDuospace-Bold.otf);
 }
 
 @font-face {
-	font-family: helveticaNeueLt;
-	src: url(fonts/HelveticaNeueLt.ttf);
+	font-family: iAWriterDuospace-BoldItalic;
+	src: url(../fonts/iAWriterDuospace-BoldItalic.otf);
 }
 
 @font-face {
-	font-family: helveticaNeueMedium;
-	src: url(fonts/HelveticaNeueMed.ttf)
+	font-family: iAWriterDuospace-Regular;
+	src: url(../fonts/iAWriterDuospace-Regular.otf)
 }
 
 @font-face {
-	font-family: helveticaNeueBold;
-	src: url(fonts/HelveticaNeueBd.ttf);
+	font-family: iAWriterDuospace-RegularItalic;
+	src: url(../fonts/iAWriterDuospace-RegularItalic.otf);
 }

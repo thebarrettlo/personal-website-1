@@ -1,5 +1,7 @@
 @charset "UTF-8";
-/* CSS Document */
+/* CSS Document 
+> travel.css is intended for use in conjuction with photography.css. Travel.css 
+> only contains the specific changes from photography.css to travel.css. */
 
 /*~~~~~ Notes ~~~~~
 - Colors used:
@@ -15,168 +17,7 @@
 Smartphone size
 **********************/
 
-html, body {
-    height: 100%;
-}
-
-body {
-    display: block;
-    background-color: rgb(12, 12, 12);
-    margin: 0;
-}
-
-header {    
-    height: 100px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0 0 20px 0;
-    position: static;
-    padding: 30px 10px 20px 30px;
-}
-
-header img {
-    max-height: 80px;
-}
-
-#homeIcon {
-    position: fixed;
-    margin: auto;
-    z-index: 1;
-}
-
-#titleheader {
-    display: block;
-    position: fixed;
-    z-index: 1;
-    font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-size: 1.7em;
-    color: white;
-    margin: auto auto auto 50px; 
-}
-
-#name {
-    color: rgb(12, 12, 12);
-    font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-weight: 600;
-    font-size: 2.1em;
-    word-spacing: -1px;
-    width: auto;
-    text-align: center;
-    position: absolute;
-    top: 20px;
-    left: 45%;
-    transform: translateX(-45%);
-    margin: auto;
-}
-
-#parent {
-    margin: auto;
-}
-
-#menubtn {
-    font-family: "Courier New", Courier, sans-serif;
-    font-size: 1.5em;
-    color: black;
-    background-color: white;
-    opacity: 0.97;
-    cursor: pointer;
-    position: fixed;
-    left: 50%;
-    bottom: 6%;
-    transform: translateX(-50%);
-    text-align: center;
-    box-sizing: border-box;
-    border: 2px solid transparent;
-}
-
-#menubtn:hover {
-    border: 2px solid #c34a18;
-}
-
-.nav {
-    height: 96%;
-    width: 95%;
-    position: fixed;
-    z-index: 2;
-    background-color: white;
-    overflow-x: hidden;
-    transition: 0.6s;
-    transition-timing-function: cubic-bezier(0, 0, 0.17, 1);
-    text-align: left;
-    font-family: "Courier New", Courier, sans-serif;
-    font-size: 1em;
-    white-space: nowrap;
-    opacity: 0.97;
-    top: 200%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.nav ul a {
-    padding: 12px 32px 12px 30px;
-    text-decoration: none;
-    display: block;
-    opacity: 1;
-}
-
-.nav ul a:hover {
-    color: rgb(12, 12, 12);
-    text-decoration: underline;
-    text-decoration-color: #c34a18;
-    -moz-text-decoration-color: #c34a18;
-    -webkit-text-decoration-color: #c34a18;
-    transition: none;
-}
-
-#closebtn {
-    position: fixed;
-    text-align: center;
-    bottom: 26px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2em;
-    margin-right: 0;
-}
-
-.navcontents {
-    height: 65%;
-    overflow: auto;
-    position: relative;
-    top: 65px;
-}
-
-.nav ul {
-    list-style: none;
-    padding-inline-start: 0;
-    margin: 0;
-}
-
-.nav .social {
-    margin: 12px 10px;
-}
-
-.social a {
-    display: inline;
-    padding: 20px;
-}
-
-#current {
-    color: #c34a18;
-    font-weight: bold;
-}
-
-hr {
-    opacity: 0.2;
-    width: 90%;
-}
-
-#gallery {
-    margin: 20px;
-}
-
 #gallery img {
-    width: 100%;
-    height: auto;
     margin: auto;
 }
 
@@ -191,77 +32,18 @@ hr {
     margin: 10px auto;
     color: rgb(12, 12, 12);
     text-align: center;
-    font-family: "Courier New", Courier, sans-serif;
     font-size: 1em;
-}
-
-.icon {
-    margin: 5px auto;
-    height: 25px;
-    width: auto;
-    border: 0;
-}
-
-footer {
-    position: absolute;
-    text-align: center;
-    font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-size: .55em;
-    color: #757575;
-    line-height: 9pt;
-    bottom: 75px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 /**********************
 Tablet size
 **********************/
 @media screen and (min-width: 768px) {
-    
-    #menubtn {
-        display: none;
-    }
-
-    #closebtn {
-        display: none;  
-    }
-
-    .nav {
-        height: 95%;
-        width: 256px;
-        transform: none;
-        left: 0;
-        top: 0;
-        margin: 20px;
-    }
-
-    .navcontents {
-        box-sizing: border-box;
-    }
-
-    .social a {
-        padding: 12px;
-    }
-
-    footer {
-        font-size: 6pt;
-        bottom: 15px;
-    }
 
     .bodycontent {
-        position: relative;
         width: calc(100% - 276px);
-        margin: 20px 0 20px 0;
+        margin: 20px 0;
         left: 276px;
-    }
-
-    header {
-        padding-top: 18px;
-    }
-
-    #photographytitle {
-        font-size: 2.1em;
     }
 
     #gallery {
@@ -275,29 +57,17 @@ Tablet size
         display: inline-block;
     }
 
-    #gallery img {
-        margin-bottom: 5px;
-    }
-
 }
 /**********************
 Desktop size
 **********************/
 @media screen and (min-width: 1024px) {
-    .nav {
-        height: 94%;
-    }
-
-    .navcontents {
-        height: 75%;
-    }
-
-    .nav .social {
-        margin: 12px 20px;
-    }
-
-    .social a {
-        padding: 10px;
+    
+    #gallery {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        column-gap: normal;
     }
     
 }
@@ -306,58 +76,11 @@ Desktop size
 1440p width size
 **********************/
 @media screen and (min-width: 1440px) {
+
     #gallery {
         -webkit-column-count: 3;
         -moz-column-count: 3;
         column-count: 3;
     }
-}
 
-/**********************
-Anchor link styles
-**********************/
-
-a:link {
-	color: rgb(12, 12, 12);
-	background-color: transparent;
-	text-decoration: none;
-}
-
-a:visited {
-	color: rgb(12, 12, 12);
-	background-color: transparent;
-	text-decoration: none;
-}
-
-a:hover {
-	color: rgb(12, 12, 12);
-    text-decoration: underline;
-    text-decoration-color: #c34a18;
-    -moz-text-decoration-color: #c34a18;
-    -webkit-text-decoration-color: #c34a18;
-    transition: none;
-}
-
-/**********************
-Imported fonts
-**********************/
-
-@font-face {
-	font-family: helveticaNeueNormal;
-	src: url(fonts/HelveticaNeue.ttf);
-}
-
-@font-face {
-	font-family: helveticaNeueLt;
-	src: url(fonts/HelveticaNeueLt.ttf);
-}
-
-@font-face {
-	font-family: helveticaNeueMedium;
-	src: url(fonts/HelveticaNeueMed.ttf)
-}
-
-@font-face {
-	font-family: helveticaNeueBold;
-	src: url(fonts/HelveticaNeueBd.ttf);
 }

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document 
-> photoset.css is intended for use in conjuction with photography.css. Photoset.css 
-> only contains the specific changes from photography.css to photoset.css. */
+> Aboutme.css is intended for use in conjuction with photography.css. Aboutme.css 
+> only contains the specific changes from photography.css to aboutme.css. */
 
 /*~~~~~ Notes ~~~~~
 - Colors used:
@@ -17,30 +17,43 @@
 Smartphone size
 **********************/
 
-#current {
-    color: #c34a18;
-    font-weight: bold;
-    padding: 0px 32px 0 55px;
-}
-
-.setHeader {
+#gallery {
     text-align: center;
     color: white;
-    margin-top: 50px;
+    padding: 0 6%;
 }
 
-.setTitle {
+#gallery h1 {
     font-size: 1.8em;
     font-family: iAWriterDuospace-Bold;
-    margin-bottom: 0;
 }
 
-.setSubtitle {
+#gallery h2 {
+    font-size: 1.4em;
+    margin-top: 2em;
+}
+
+#gallery p {
     font-size: 1em;
+    text-align: left;
+    text-indent: 3em;
+    line-height: 1.4em;
 }
 
-#gallery img {
-    margin: 15px auto;
+#gallery a:link {
+    color: white;
+    text-decoration: underline #c34a18;
+}
+
+#gallery a:visited {
+    color: white;
+    text-decoration: underline #c34a18;
+}
+
+#gallery a:hover {
+    color:  white;
+    background-color: #c34a18;
+    text-decoration: underline white;
 }
 
 /**********************
@@ -52,13 +65,6 @@ Tablet size
         -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;
-    }
-
-    #gallery img {
-        width: 85%;
-        position: relative;
-        transform: translateX(8%);
-        margin: 25px 0;
     }
 
 }
@@ -73,10 +79,6 @@ Desktop size
         column-count: 1;
     }
     
-    #gallery img {
-        width: 60%;
-        transform: translateX(32%);
-    }
 }
 
 /**********************
