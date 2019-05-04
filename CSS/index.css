@@ -22,12 +22,24 @@ html {
 
 body {
     display: block;
+    box-sizing: border-box;
     align-items: center;
     background-color: white;
-    height: 94%;
-    top: 50%;
+    height: 100%;
     margin: 0;
     border: 20px solid black;
+}
+
+#homeIcon {
+    position: absolute;
+    z-index: 0;
+    filter: invert(.08);
+    transform: translate(-50%, 50%);
+    left: 50%;
+}
+
+.bodyContent {
+    z-index: 1;
 }
 
 header {
@@ -37,7 +49,7 @@ header {
 
 h1 {
     color: rgb(12, 12, 12);
-    font-family: helveticaNeueBold, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-weight: 600;
     font-size: 3em;
 }
@@ -47,9 +59,9 @@ h1 {
 }
 
 .nav {
-    margin: 85px auto;
+    margin: 75px auto;
     text-align: center;
-    font-family: "Courier New", Courier, sans-serif;
+    font-family: iAWriterDuospace-Regular, "Courier New", monospace;
     font-size: 1.6em;
     position: relative;
 }
@@ -61,7 +73,7 @@ h1 {
 }
 
 .nav li {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .social {
@@ -85,7 +97,7 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-family: helveticaNeueLt, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-size: .6em;
     color: #757575;
 }
@@ -184,21 +196,21 @@ Imported fonts
 **********************/
 
 @font-face {
-	font-family: helveticaNeueNormal;
-	src: url(fonts/HelveticaNeue.ttf);
+	font-family: iAWriterDuospace-Bold;
+	src: url(../fonts/iAWriterDuospace-Bold.otf);
 }
 
 @font-face {
-	font-family: helveticaNeueLt;
-	src: url(fonts/HelveticaNeueLt.ttf);
+	font-family: iAWriterDuospace-BoldItalic;
+	src: url(../fonts/iAWriterDuospace-BoldItalic.otf);
 }
 
 @font-face {
-	font-family: helveticaNeueMedium;
-	src: url(fonts/HelveticaNeueMed.ttf)
+	font-family: iAWriterDuospace-Regular;
+	src: url(../fonts/iAWriterDuospace-Regular.otf)
 }
 
 @font-face {
-	font-family: helveticaNeueBold;
-	src: url(fonts/HelveticaNeueBd.ttf)
+	font-family: iAWriterDuospace-RegularItalic;
+	src: url(../fonts/iAWriterDuospace-RegularItalic.otf);
 }

@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="keywords" content="photography, photographer, designer, UX, user experience, UI, user interface,
+        front-end, hand-coded, HTML, CSS, JavaScript, outdoors, portrait, wedding, event, senior, graduation,
+        street, travel, bear, barrett lo, contact me">
+    <meta name="description" content="Contact me!"> 
+    <title>Barrett Lo | Contact</title>
+    <link href="css/photography.css" rel="stylesheet" type="text/css">
+    <link href="css/contact.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="sidebar" class="nav">
+        <h2 id="name"><a href="index.html" title="Portal page"><b class="emphasis">the</b> barrett lo</a></h2>
+        <div class="navcontents">
+            <hr>
+            <ul>
+                <li><a href="photography.html">Photography home</a></li>
+                <li><a href="travel/travel.html">Travel</a></li>
+                <li><a href="street.html">Street</a></li>
+                <li><a href="portraits/portraits.html">Portraits</a></li>
+                
+                <hr>
+
+                <li><a href="design.html" title="Design portfolio">Design work</a></li>
+                <li><a href="about.html" title="Read about me">About</a></li>
+                <li><a href="contact.html" title="Contact information" id="current">Contact</a></li>
+
+            </ul>
+
+            <div class="social">
+                <a href="https://www.facebook.com/theBarrettLo/" title="Like my Facebook Page!" target="_blank">
+                    <img src="images/logos/flogo-RGB-HEX-Blk-72.svg" alt="Facebook page @thebarrettlo" class="icon"></a>
+                <a href="https://www.instagram.com/thebarrettlo/" title="Follow me on Instagram!" target="_blank">
+                    <img src="images/logos/glyph-logo_May2016.png" alt="Instagram @thebarrettlo" class="icon"></a>
+                <a href="https://www.linkedin.com/in/thebarrettlo/" title="Connect with me on LinkedIn!" target="_blank">   
+                    <img src="images/logos/In-Black-34px-TM.png" alt="LinkedIn @thebarrettlo" class="icon"></a>
+                <a href="https://github.com/thebarrettlo" title="Check out my GitHub!" target="_blank">   
+                    <img src="images/logos/GitHub-Mark-64px.png" alt="GitHub profile @thebarrettlo" class="icon"></a>
+            </div>
+        </div>
+        <footer id="footer">
+                <script src="footer.js"></script>
+        </footer>
+        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&mdash; &times; &mdash;</a>
+    </div>
+
+    <div class="bodycontent" id="top">
+        <header>      
+            <a href="index.html" title="Portal page"><img src="images/bearDrawing.png" id="homeIcon"></a>
+            <a href="photography.html" title="Photography homepage">
+                <h1 id="titleheader">photography <b class="emphasis">| contact</b></h1>
+            </a>
+
+            <span id="menubtn" onclick="openNav()">&nbsp;&mdash; menu &mdash;&nbsp;</span>
+
+            <script src="sidebar.js"></script>
+        </header>
+        
+        <hr>
+
+        <section id="gallery">
+            <h1>Contact me</h1>
+                <h3>for business inquiries or website feedback</h3>
+            <form action="contact.php" method="POST">
+                <div class="formField">
+                    <label for="name">Name</label>
+                    <input type="text" id="visitorName" name="visitorName" pattern=[A-Za-z\s]{3,20} required>
+                </div>
+                <div class="formField">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="contactEmail" required>
+                </div>
+                <div class="formField">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="messageSubject" pattern=[A-Za-z0-9\s]{2,60} required></input>
+                </div>
+                <div class="formField">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="visitorMessage" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <hr>
+        <br>
+    </div>
+    
+</body>
+</html>

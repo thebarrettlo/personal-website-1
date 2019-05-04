@@ -33,6 +33,10 @@ Smartphone size
     margin-top: 2em;
 }
 
+#gallery h3 {
+    font-size: .9em;
+}
+
 #gallery p {
     font-size: 1em;
     text-align: left;
