@@ -34,7 +34,7 @@ Smartphone size
 }
 
 #gallery h3 {
-    font-size: .9em;
+    font-size: 1.1em;
 }
 
 #gallery p {
@@ -60,6 +60,51 @@ Smartphone size
     text-decoration: underline white;
 }
 
+form {
+    margin-top: 25px;
+}
+
+.formField {
+    margin-bottom: 1em;
+}
+
+.formField input, textarea {
+    width: 75%;
+    height: 2em;
+    margin: .5em 0;
+    padding: 0 5px;
+    font-size: 1em;
+}
+
+.formField textarea {
+    padding: 5px;
+    height: 8em;
+    resize: vertical;
+}
+
+#submit {
+    font-family: iAWriterDuospace-Regular, "Courier New", monospace;
+    font-size: 1.2em;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    padding: 5px;
+}
+
+#submit:hover {
+    border: 2px solid #c34a18;
+    color: rgb(12, 12, 12);
+    text-decoration: underline;
+    text-decoration-color: #c34a18;
+    -moz-text-decoration-color: #c34a18;
+    -webkit-text-decoration-color: #c34a18;
+    transition: none;
+}
+
+
 /**********************
 Tablet size
 **********************/
@@ -83,6 +128,15 @@ Desktop size
         column-count: 1;
     }
     
+    .formField input, textarea {
+        width: 50%;
+        padding: 0 8px;
+    }
+
+    .formField textarea {
+        padding: 8px;
+    }
+
 }
 
 /**********************

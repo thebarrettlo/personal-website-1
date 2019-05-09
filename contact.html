@@ -62,26 +62,31 @@
         <hr>
 
         <section id="gallery">
-            <h1>Contact me</h1>
-                <h3>for business inquiries or website feedback</h3>
+            <h3>For business inquiries or website feedback, use this form.<br><br>You can also e-mail me directly at
+                <a href="mailto:thebarrettlo@gmail.com">thebarrettlo@gmail.com</a> or through my social media channels (@thebarrettlo).</h3>
+            <hr>
             <form action="contact.php" method="POST">
                 <div class="formField">
                     <label for="name">Name</label>
+                    <br>
                     <input type="text" id="visitorName" name="visitorName" pattern=[A-Za-z\s]{3,20} required>
                 </div>
                 <div class="formField">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" name="contactEmail" required>
+                    <br>
+                    <input type="email" id="email" name="contactEmail" pattern=[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$ required>
                 </div>
                 <div class="formField">
                     <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="messageSubject" pattern=[A-Za-z0-9\s]{2,60} required></input>
+                    <br>
+                    <input type="text" id="subject" name="messageSubject" pattern=".{2,30}" required></input>
                 </div>
                 <div class="formField">
                     <label for="message">Message</label>
+                    <br>
                     <textarea id="message" name="visitorMessage" required></textarea>
                 </div>
-                <button type="submit">Submit</button>
+                <span type="submit" id="submit">Submit</span>
             </form>
         </section>
         <hr>

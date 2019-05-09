@@ -5,6 +5,7 @@ if($_POST) {
     $contactEmail = "";
     $messageSubject = "";
     $visitorMessage = "";
+    $copyMessage = "";
     $recipient = "thebarrettlo@gmail.com";
     
     if(isset($_POST['visitorName'])) {
@@ -17,17 +18,28 @@ if($_POST) {
     }
 
     if(isset($_POST['messageSubject'])) {
-        $messageSubject = filter_var($_POST['messageSubject'], FILTER_SANITIZE_STRING);
+        $messageSubject = $_POST['messageSubject'];
     }
 
     if(isset($_POST['visitorMessage'])) {
-        $visitorMessage = filter_var($_POST['visitorMessage'], FILTER_SANITIZE_STRING);
+        $visitorMessage = htmlspecialchars($_POST['visitorMessage']);
+        $copyMessage = nl2br("Hi!\r\n
+        This message is to confirm your message sent to Barrett Lo (thebarrettlo@gmail.com) through
+        www.thebarrettlo.com. You'll find a copy of your message below. Please allow a couple days for a
+        reply. Thanks!\r\n\n##############################################\r\n$visitorMessage\r\n\n##############################################");
     }
 
-    $headers = "From: $contactEmail";
+    $headers = "MIME-Version: 1.0" . "\r\n" .
+    "Content-type: text/html; charset=utf-8" . "\r\n" .
+    "From: $contactEmail \r\n";
 
-    if(mail($recipient, $messageSubject, $visitorMessage, $headers)) {
-        echo "<p>Your message has been sent. You will receive a copy of your message and a reply soon!</p>";
+    if(mail($recipient, $messageSubject, $visitorMessage, $headers) and
+    mail($contactEmail, "Successfully sent: \"$messageSubject\"", $copyMessage, $headers)) {
+        echo '<script type="text/javascript">
+             alert("Your message has been sent. You will receive a copy of your message and a reply soon!");
+             window.location.replace("https://www.thebarrettlo.com/contact.html");
+             </script>';
+        exit;
     }
 }
 else {

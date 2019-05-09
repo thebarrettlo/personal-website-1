@@ -98,11 +98,11 @@ header img {
     color: black;
     background-color: white;
     opacity: 0.97;
+    z-index: 2;
     cursor: pointer;
     position: fixed;
-    left: 50%;
     bottom: 6%;
-    transform: translateX(-50%);
+    transform: translateX(50%);
     text-align: center;
     box-sizing: border-box;
     border: 2px solid transparent;
@@ -110,6 +110,7 @@ header img {
 
 #menubtn:hover {
     border: 2px solid #c34a18;
+    
 }
 
 #closebtn {
@@ -220,7 +221,7 @@ Tablet size
     }
 
     .nav {
-        height: 95%;
+        height: 94%;
         width: 256px;
         transform: none;
         left: 0;
@@ -230,10 +231,15 @@ Tablet size
 
     .navcontents {
         box-sizing: border-box;
+        height: 75%;
+    }
+
+    .nav .social {
+        margin: 12px 20px;
     }
 
     .social a {
-        padding: 12px;
+        padding: 10px;
     }
 
     footer {
@@ -274,21 +280,6 @@ Tablet size
 Desktop size
 **********************/
 @media screen and (min-width: 1024px) {
-    .nav {
-        height: 94%;
-    }
-
-    .navcontents {
-        height: 75%;
-    }
-
-    .nav .social {
-        margin: 12px 20px;
-    }
-
-    .social a {
-        padding: 10px;
-    }
     
     #gallery {
         -webkit-column-count: 3;

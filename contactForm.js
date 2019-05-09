@@ -1,0 +1,1 @@
+alert("Your message has been sent. You will receive a copy of your message and a reply soon!");
