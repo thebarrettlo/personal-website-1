@@ -38,6 +38,11 @@ header img {
     max-height: 80px;
 }
 
+#skipLink {
+    position: absolute;
+    top: -50%;
+}
+
 #homeIcon {
     position: fixed;
     margin: auto;
@@ -177,12 +182,12 @@ hr {
     margin-bottom: 85px;
 }
 
-#gallery {
+#mainContent {
     margin: 20px;
     font-family: iAWriterDuospace-Regular, "Courier New", monospace;
 }
 
-#gallery img {
+#mainContent img {
     width: 100%;
     height: auto;
     margin: auto auto 15px auto;
@@ -261,7 +266,7 @@ Tablet size
         font-size: 2.1em;
     }
 
-    #gallery {
+    #mainContent {
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
@@ -271,7 +276,7 @@ Tablet size
         column-gap: 10px;
     }
 
-    #gallery img {
+    #mainContent img {
         margin-bottom: 5px;
     }
 
@@ -281,7 +286,7 @@ Desktop size
 **********************/
 @media screen and (min-width: 1024px) {
     
-    #gallery {
+    #mainContent {
         -webkit-column-count: 3;
         -moz-column-count: 3;
         column-count: 3;
@@ -292,7 +297,7 @@ Desktop size
 1440p width size
 **********************/
 @media screen and (min-width: 1440px) {
-    #gallery {
+    #mainContent {
         -webkit-column-count: 4;
         -moz-column-count: 4;
         column-count: 4;

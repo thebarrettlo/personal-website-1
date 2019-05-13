@@ -26,15 +26,20 @@ if($_POST) {
         $copyMessage = nl2br("Hi!\r\n
         This message is to confirm your message sent to Barrett Lo (thebarrettlo@gmail.com) through
         www.thebarrettlo.com. You'll find a copy of your message below. Please allow a couple days for a
-        reply. Thanks!\r\n\n##############################################\r\n$visitorMessage\r\n\n##############################################");
+        reply. Thanks!\r\n\n##############################################\r\nSent on " . date("l, m/d/Y")
+        . " at " . date("h:i:sa") . "\r\n\n$visitorMessage\r\n\n##############################################");
     }
 
     $headers = "MIME-Version: 1.0" . "\r\n" .
     "Content-type: text/html; charset=utf-8" . "\r\n" .
     "From: $contactEmail \r\n";
 
+    $headersAlt = "MIME-Version: 1.0" . "\r\n" .
+    "Content-type: text/html; charset=utf-8" . "\r\n" .
+    "From: $recipient \r\n";
+
     if(mail($recipient, $messageSubject, $visitorMessage, $headers) and
-    mail($contactEmail, "Successfully sent: \"$messageSubject\"", $copyMessage, $headers)) {
+    mail($contactEmail, "Successfully sent: \"$messageSubject\"", $copyMessage, $headersAlt)) {
         echo '<script type="text/javascript">
              alert("Your message has been sent. You will receive a copy of your message and a reply soon!");
              window.location.replace("https://www.thebarrettlo.com/contact.html");

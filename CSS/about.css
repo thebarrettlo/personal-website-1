@@ -17,40 +17,40 @@
 Smartphone size
 **********************/
 
-#gallery {
+#mainContent {
     text-align: center;
     color: white;
     padding: 0 6%;
 }
 
-#gallery h1 {
+#mainContent h1 {
     font-size: 2em;
     font-family: iAWriterDuospace-Bold;
 }
 
-#gallery h2 {
+#mainContent h2 {
     font-size: 1.4em;
     margin-top: 2em;
 }
 
-#gallery p {
+#mainContent p {
     font-size: 1em;
     text-align: left;
     text-indent: 3em;
     line-height: 1.4em;
 }
 
-#gallery a:link {
+#mainContent a:link {
     color: white;
     text-decoration: underline #c34a18;
 }
 
-#gallery a:visited {
+#mainContent a:visited {
     color: white;
     text-decoration: underline #c34a18;
 }
 
-#gallery a:hover {
+#mainContent a:hover {
     color:  white;
     background-color: #c34a18;
     text-decoration: underline white;
@@ -61,7 +61,7 @@ Tablet size
 **********************/
 @media screen and (min-width: 768px) {
 
-    #gallery {
+    #mainContent {
         -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;
@@ -73,7 +73,7 @@ Desktop size
 **********************/
 @media screen and (min-width: 1024px) {
     
-    #gallery {
+    #mainContent {
         -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;
@@ -86,7 +86,7 @@ Desktop size
 **********************/
 @media screen and (min-width: 1440px) {
     
-    #gallery {
+    #mainContent {
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;

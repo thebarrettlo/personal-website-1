@@ -4,7 +4,7 @@
 // Future refinements will couple alt text and href link with image pool (library?), and hopefully eventually
 // reference an external text document holding image and link data for easier management.
 
-var gallery = document.getElementById("gallery");
+var gallery = document.getElementById("mainContent");
 var imageList = [
     ["amberJ18-1.jpg", "Woman laying on recliner", "portraits/amberJ18.html"],
     ["amberJ18-2.jpg", "Woman looking over recliner back", "portraits/amberJ18.html"],
