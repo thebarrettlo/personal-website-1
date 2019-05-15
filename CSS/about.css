@@ -73,22 +73,11 @@ Desktop size
 **********************/
 @media screen and (min-width: 1024px) {
     
-    #mainContent {
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-        column-count: 1;
-    }
-    
 }
 
 /**********************
 1440p width size
 **********************/
 @media screen and (min-width: 1440px) {
-    
-    #mainContent {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-    }
+
 }

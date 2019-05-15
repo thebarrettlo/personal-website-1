@@ -107,7 +107,8 @@ header img {
     cursor: pointer;
     position: fixed;
     bottom: 6%;
-    transform: translateX(50%);
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     box-sizing: border-box;
     border: 2px solid transparent;
@@ -256,6 +257,7 @@ Tablet size
         position: relative;
         width: auto;
         margin: 20px auto 20px 276px;
+        height: 100%;
     }
 
     header {
