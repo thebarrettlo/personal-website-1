@@ -39,6 +39,30 @@ Smartphone size
     font-size: 1em;
 }
 
+#mainContent p {
+    font-size: 1em;
+    text-align: left;
+    text-indent: 3em;
+    line-height: 1.4em;
+    margin: 2em 0;
+}
+
+#mainContent a:link {
+    color: white;
+    text-decoration: underline #c34a18;
+}
+
+#mainContent a:visited {
+    color: white;
+    text-decoration: underline #c34a18;
+}
+
+#mainContent a:hover {
+    color:  white;
+    background-color: #c34a18;
+    text-decoration: underline white;
+}
+
 #mainContent img {
     margin: 15px auto;
 }
@@ -47,6 +71,10 @@ Smartphone size
 Tablet size
 **********************/
 @media screen and (min-width: 768px) {
+
+    .setHeader {
+        padding: 0 8%;
+    }
 
     #mainContent {
         -webkit-column-count: 1;
