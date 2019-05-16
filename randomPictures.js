@@ -4,6 +4,24 @@
 // Future refinements will couple alt text and href link with image pool (library?), and hopefully eventually
 // reference an external text document holding image and link data for easier management.
 
+const csv = requirejs('csv');
+var obj = csv();
+
+function imageFile(Fone, Ftwo, Fthree) {
+    this.FieldOne = Fone;
+    this.FieldTwo = Ftwo;
+    this.FieldThree = Fthree;
+};
+
+var imageList = [];
+
+obj.from.path('imagelist.csv').to.array(function (data) {
+    for (var index = 0; index < data.length; index++) {
+        data.push(new imageFile(data[index][0], data[index][1], data[index][2]));
+    }
+})
+
+
 var gallery = document.getElementById("mainContent");
 var imageList = [
     ["amberJ18-1.jpg", "Woman laying on recliner", "portraits/amberJ18.html"],

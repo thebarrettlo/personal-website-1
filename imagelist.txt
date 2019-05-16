@@ -1,4 +1,4 @@
-var imageList = [
+[
     ["amberJ18-1.jpg", "Woman laying on recliner", "portraits/amberJ18.html"],
     ["amberJ18-2.jpg", "Woman looking over recliner back", "portraits/amberJ18.html"],
     ["amberJ18-3.jpg", "Woman with chocolate chip cookies on her eyes", "portraits/amberJ18.html"],
@@ -51,4 +51,4 @@ var imageList = [
     ["yosemite18-6.jpg", "Tourists wait for night to fall over Half Dome, Yosemite National Park", "travel/yosemite18.html"],
     ["yosemite18-7.jpg", "Man stands at the base of Vernal Falls in Yosemite National Park", "travel/yosemite18.html"],
     ["yosemite18-8.jpg", "Yosemite National Park from Tunnel View", "travel/yosemite18.html"]
-    ];
+]
