@@ -17,44 +17,44 @@
 Smartphone size
 **********************/
 
-#mainContent {
+.mainContent {
     text-align: center;
     color: white;
     padding: 0 6%;
 }
 
-#mainContent h1 {
+.mainContent h1 {
     font-size: 2em;
     font-family: iAWriterDuospace-Bold;
 }
 
-#mainContent h2 {
+.mainContent h2 {
     font-size: 1.4em;
     margin-top: 2em;
 }
 
-#mainContent h3 {
+.mainContent h3 {
     font-size: 1.1em;
 }
 
-#mainContent p {
+.mainContent p {
     font-size: 1em;
     text-align: left;
     text-indent: 3em;
     line-height: 1.4em;
 }
 
-#mainContent a:link {
+.mainContent a:link {
     color: white;
     text-decoration: underline #c34a18;
 }
 
-#mainContent a:visited {
+.mainContent a:visited {
     color: white;
     text-decoration: underline #c34a18;
 }
 
-#mainContent a:hover {
+.mainContent a:hover {
     color:  white;
     background-color: #c34a18;
     text-decoration: underline white;
@@ -110,7 +110,7 @@ Tablet size
 **********************/
 @media screen and (min-width: 768px) {
 
-    #mainContent {
+    .mainContent {
         -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;

@@ -39,7 +39,7 @@ Smartphone size
     font-size: 1em;
 }
 
-#mainContent p {
+.mainContent p {
     font-size: 1em;
     text-align: left;
     text-indent: 3em;
@@ -47,23 +47,23 @@ Smartphone size
     margin: 2em 0;
 }
 
-#mainContent a:link {
+.mainContent a:link {
     color: white;
     text-decoration: underline #c34a18;
 }
 
-#mainContent a:visited {
+.mainContent a:visited {
     color: white;
     text-decoration: underline #c34a18;
 }
 
-#mainContent a:hover {
+.mainContent a:hover {
     color:  white;
     background-color: #c34a18;
     text-decoration: underline white;
 }
 
-#mainContent img {
+.mainContent img {
     margin: 15px auto;
 }
 
@@ -76,13 +76,13 @@ Tablet size
         padding: 0 8%;
     }
 
-    #mainContent {
+    .mainContent {
         -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;
     }
 
-    #mainContent img {
+    .mainContent img {
         width: 85%;
         position: relative;
         transform: translateX(8%);
@@ -95,13 +95,13 @@ Desktop size
 **********************/
 @media screen and (min-width: 1024px) {
     
-    #mainContent {
+    .mainContent {
         -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;
     }
     
-    #mainContent img {
+    .mainContent img {
         width: 60%;
         transform: translateX(32%);
     }
@@ -112,7 +112,7 @@ Desktop size
 **********************/
 @media screen and (min-width: 1440px) {
     
-    #mainContent {
+    .mainContent {
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;

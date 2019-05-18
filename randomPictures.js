@@ -4,7 +4,7 @@
 // Future refinements will couple alt text and href link with image pool (library?), and hopefully eventually
 // reference an external text document holding image and link data for easier management.
 
-var gallery = document.getElementById("mainContent");
+var gallery = document.getElementById("loadingMainContent");
 var imageList = [
     ["amberJ18-1.jpg", "Woman laying on recliner", "portraits/amberJ18.html"],
     ["amberJ18-2.jpg", "Woman looking over recliner back", "portraits/amberJ18.html"],
@@ -38,7 +38,7 @@ var imageList = [
     ["missionTrails18-5.jpg", "Man rock climbing with belayer in Mission Trails Regional Park", "travel/missionTrails18.html"],
     ["monsoonSeason18-1_w500.jpg", "Man stands in front of the Timken Museum of Art at Balboa Park", "portraits/monsoonSeason18.html"],
     ["monsoonSeason18-2_w500.jpg", "Man in white button-down shirt in front of tropical plants", "portraits/monsoonSeason18.html"],
-    ["monsoonSeason18-3_w500.jpg", "Three men play croquet in front of the Balboa Park Botanical Garden", "portraits/monsoonSeason18.html"],
+    /*["monsoonSeason18-3_w500.jpg", "Three men play croquet in front of the Balboa Park Botanical Garden", "portraits/monsoonSeason18.html"],*/
     ["monsoonSeason18-4_w500.jpg", "Three men play croquet in front of the Balboa Park Botanical Garden", "portraits/monsoonSeason18.html"],
     ["monsoonSeason18-5_w500.jpg", "Three men play air instruments in Balboa Park", "portraits/monsoonSeason18.html"],
     ["monsoonSeason18-6_w500.jpg", "Man in white button-up shirt sits with electric guitar in front of a Spanish tile fountain", "portraits/monsoonSeason18.html"],
@@ -76,3 +76,4 @@ while (uniqueImages < numOfImages) {
     uniqueImages += 1;
     imageList.splice(randomNumber,1);
 }
+gallery.setAttribute("id", "loadedMainContent")
