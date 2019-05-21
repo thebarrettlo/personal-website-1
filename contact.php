@@ -36,7 +36,7 @@ if($_POST) {
 
     $envelopeFrom = "-f barrett@thebarrettlo.com";
 
-    if(mail($recipient, $messageSubject, $visitorMessage, $headers) and
+    if(mail($recipient, $messageSubject, "<html>".nl2br($visitorMessage)."</html>", $headers) and
     mail($contactEmail, "Message sent: $messageSubject", $copyMessage, $headersReceipt, $envelopeFrom)) {
         echo "<script type='text/javascript'>
              alert('Your message has been sent. You will receive a copy of your message and a reply soon! You may need to check your spam folder.');
