@@ -34,7 +34,7 @@ body {
     position: absolute;
     z-index: 0;
     filter: invert(.08);
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -8%);
     left: 50%;
 }
 
@@ -45,6 +45,7 @@ body {
 header {
     margin: 75px 50px;
     text-align: center;
+    z-index: 1;
 }
 
 h1 {

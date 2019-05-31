@@ -70,22 +70,22 @@
                 <div class="formField">
                     <label for="name">Name</label>
                     <br>
-                    <input type="text" id="visitorName" name="visitorName" pattern=[A-Za-z\s]{3,20} required>
+                    <input type="text" id="visitorName" name="visitorName" placeholder="John Doe" pattern=[A-Za-z\s]{3,20} required>
                 </div>
                 <div class="formField">
                     <label for="email">E-mail</label>
                     <br>
-                    <input type="email" id="email" name="contactEmail" pattern=[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$ required>
+                    <input type="email" id="email" name="contactEmail" placeholder="address@email.com" pattern=[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$ required>
                 </div>
                 <div class="formField">
                     <label for="subject">Subject</label>
                     <br>
-                    <input type="text" id="subject" name="messageSubject" pattern=".{2,30}" required></input>
+                    <input type="text" id="subject" name="messageSubject" placeholder="Hello!" pattern=".{2,30}" required></input>
                 </div>
                 <div class="formField">
                     <label for="message">Message</label>
                     <br>
-                    <textarea id="message" name="visitorMessage" required></textarea>
+                    <textarea id="message" name="visitorMessage" placeholder="Write your message here." required></textarea>
                 </div>
                 <button type="submit" id="submit">Submit</button>
             </form>
