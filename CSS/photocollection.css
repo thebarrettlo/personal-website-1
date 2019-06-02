@@ -25,6 +25,7 @@ Smartphone size
     background-color: #f1f1f1;
     margin: auto auto 15px auto;
     padding: 8px;
+    border-radius: 3px;
 }
 
 .thumbCaption {

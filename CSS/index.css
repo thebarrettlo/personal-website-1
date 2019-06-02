@@ -43,7 +43,7 @@ body {
 }
 
 header {
-    margin: 75px 50px;
+    margin: 50px;
     text-align: center;
     z-index: 1;
 }
@@ -60,7 +60,7 @@ h1 {
 }
 
 .nav {
-    margin: 75px auto;
+    margin: 50px auto;
     text-align: center;
     font-family: iAWriterDuospace-Regular, "Courier New", monospace;
     font-size: 1.5em;
@@ -113,11 +113,7 @@ Tablet size (on desktop)
     }
     
     h1 {
-        font-size: 4em;
-    }
-
-    .nav {
-        font-size: 1.8em;
+        font-size: 3.5em;
     }
 
     .nav a:hover {
