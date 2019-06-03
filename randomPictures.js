@@ -4,7 +4,7 @@
 // Future refinements will couple alt text and href link with image pool (library?), and hopefully eventually
 // reference an external text document holding image and link data for easier management.
 
-var gallery = document.getElementById("loadingMainContent");
+var gallery = document.getElementById("randomGallery");
 var imageList = [
     ["amberJ18-1.jpg", "Woman laying on recliner", "portraits/amberJ18.html"],
     ["amberJ18-2.jpg", "Woman looking over recliner back", "portraits/amberJ18.html"],
@@ -69,6 +69,9 @@ while (uniqueImages < numOfImages) {
     var curr = document.createElement("img");
     curr.src = "images/" + imageList[randomNumber][0];
     curr.alt = imageList[randomNumber][1];
+    curr.onload = function(e) { // Fade in image when loaded
+        loadedimg(e);
+    };
     var anchor = document.createElement("a");
     anchor.href = imageList[randomNumber][2];
     anchor.appendChild(curr);
@@ -76,4 +79,8 @@ while (uniqueImages < numOfImages) {
     uniqueImages += 1;
     imageList.splice(randomNumber,1);
 }
-gallery.setAttribute("id", "loadedMainContent")
+
+function loadedimg(e) {
+    if (!e) e = window.event;
+    e.target.style.opacity = 1;
+}

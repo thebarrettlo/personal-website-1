@@ -15,16 +15,9 @@
 Smartphone size
 **********************/
 
-.mainContent {
-    visibility: hidden;
+.mainContent img {
     opacity: 0;
-    transition: visibility 0s, opacity 1s ease-in-out;
-}
-
-#loadedMainContent {
-    visibility: visible;
-    opacity: 1;
-    transition-delay: .3s;
+    transition: opacity 1.7s ease-in-out;
 }
 
 /**********************
