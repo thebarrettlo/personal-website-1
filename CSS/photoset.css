@@ -45,6 +45,7 @@ Smartphone size
     text-indent: 3em;
     line-height: 1.4em;
     margin: 2em 0;
+    text-rendering: optimizeLegibility;
 }
 
 .mainContent a:link {

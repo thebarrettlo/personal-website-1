@@ -22,7 +22,7 @@ var imageList = [
     ["joannaP18-2.jpg", "Cal Poly grad in gown in front of building", "portraits/joannaP18.html"],
     ["joannaP18-3.jpg", "Woman sits on rock in field of yellow flowers by ocean", "portraits/joannaP18.html"],
     ["joannaP18-4.jpg", "Cal Poly grad in gown in front of bougainvillea bush", "portraits/joannaP18.html"],
-    ["joannaP18-5_w500.jpg", "Cal Poly grad in gown struts under trees toward camera", "portraits/joannaP18"],
+    ["joannaP18-5_w500.jpg", "Cal Poly grad in gown struts under trees toward camera", "portraits/joannaP18.html"],
     ["joannaP18-6_w500.jpg", "Cal Poly grad in gown poses confidently", "portraits/joannaP18.html"],
     ["joshuaTree18-1.jpg", "People by a pond in Joshua Tree National Park", "travel/joshuaTree18.html"],
     ["joshuaTree18-2.jpg", "People climbing on a cliffside in Joshua Tree National Park", "travel/joshuaTree18.html"],

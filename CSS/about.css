@@ -21,6 +21,7 @@ Smartphone size
     text-align: center;
     color: white;
     padding: 0 6%;
+    text-rendering: optimizeLegibility;
 }
 
 .mainContent h1 {
